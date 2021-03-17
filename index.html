@@ -10,6 +10,36 @@
   <meta name="author" content="Bucky Maler">
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
+<style>
+  h6 {
+    position:relative;
+    border-right: solid 3px rgba(0,255,0,.75);
+    white-space: nowrap;
+    overflow: hidden;    
+    font-family: 'Source Code Pro', monospace;  
+    font-size: 28px;
+    color: rgba(255,255,255,.70);
+  }
+  
+  /* Animation */
+  h6 {
+    animation: animated-text 4s steps(29,end) 1s 1 normal both,
+               animated-cursor 600ms steps(29,end) infinite;
+  }
+  
+  /* text animation */
+  
+  @keyframes animated-text{
+    from{width: 0;}
+    to{width: 410px;}
+  }
+  
+@keyframes animated-cursor{
+  from{border-right-color: rgba(0,255,0,.75);}
+  to{border-right-color: transparent;}
+}
+
+  </style>
 <body>
 
 <!-- notification for small viewports and landscape oriented smartphones -->
@@ -48,7 +78,7 @@
           <li class="l-section section section--is-active">
             <div class="intro">
               <div class="intro--banner">
-                <h1>I'm Amith<br>I <img width = "25px" border="0" src="./img/heart.png"> to Break into Codes.</h1>
+                <h1>I'm Amith</h1><br><h6>I<span style="color:red">❤</span> to Break into Codes.</h6>
                 <button class="cta">Contact me
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
                   <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
@@ -61,8 +91,8 @@
               </div>
               <div class="intro--options">
                 <a href="#0">
-                  <h3>Amith &amp; V Purushothaman</h3>
-                  <p>I love to break into codes</p>
+                  <h3>Amith V Purushothaman</h3>
+                  <p>I am a Btech Computer Science Student</p>
                 </a>
                 <a href="#0">
                   <h3>Fantasy interactive</h3>
